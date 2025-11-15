@@ -12,7 +12,9 @@ It showcases my projects, skills, experience, and contact information.
 - Dedicated sections for:
   - About Me
   - Skills
+  - Education
   - Projects
+  - Certifications
   - Contact
 - Clean and reusable React components  
 - Fast and optimized build  
@@ -24,7 +26,7 @@ It showcases my projects, skills, experience, and contact information.
 - **React.js**
 - **JavaScript (ES6+)**
 - **HTML5 & CSS3**
-- **Bootstrap / Tailwind (if used)**
+- **Bootstrap**
 - **Git & GitHub**
 
 ---
