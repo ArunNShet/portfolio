@@ -1114,7 +1114,7 @@ h2 {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: #f5f9fc;
+    background: white;
     backdrop-filter: blur(10px);
     width: 100%;
     text-align: center;

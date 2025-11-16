@@ -8,7 +8,7 @@ const About = () => {
         <h2>About Me</h2>
         <div className="about-content">
           <div className="about-text">
-            <p>Hi, I’m Arun. I’m a passionate Full-Stack Developer and MCA graduate with experience in React, JavaScript, HTML, CSS, Java, Python, and other modern web technologies. I enjoy creating user-friendly, responsive, and efficient applications that solve real-world problems.</p>
+            <p>Hi, I’m Arun, MCA graduate and passionate Full-Stack Developer with experience in React, JavaScript, HTML, CSS, Java, Python, and other modern web technologies. I enjoy creating user-friendly, responsive, and efficient applications that solve real-world problems.</p>
             <p>With a background in computer science, I focus on writing clean, maintainable code while ensuring strong performance and a great user experience. I love working across both frontend and backend technologies, and I’m always looking to improve my skills through hands-on projects.</p>
             <p>I’m also passionate about machine learning, data analytics, and building practical solutions that blend logic with creativity. When I’m not coding, I enjoy exploring new technologies, learning modern frameworks, and contributing to open-source projects.</p>
           </div>
