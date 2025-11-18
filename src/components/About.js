@@ -22,7 +22,7 @@ const About = () => {
             <a href="https://github.com/ArunNShet" target="_blank" rel="noopener noreferrer" className="about-link" title="GitHub">
               <i className="fab fa-github"></i>
             </a>
-            <a href="/Arun_Resume.pdf" download className="about-link" title="Download Resume">
+            <a href="/RESUME_ARUN.pdf" download className="about-link" title="Download Resume">
               <span className="resume-label">Resume</span>
               <i className="fas fa-download"></i>
             </a>

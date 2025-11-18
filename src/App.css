@@ -114,7 +114,7 @@ h2 {
   /* background: #f9f9f9; */
 }
 .hero {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
     animation: fadeInUp 1s ease-out;
     display: flex;
     justify-content: center;
@@ -275,7 +275,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-.about-link[href="/Arun_Resume.pdf"] {
+.about-link[href="/RESUME_ARUN.pdf"] {
   width: 120px;
   height: 50px;
   border-radius: 25px;
@@ -983,8 +983,7 @@ h2 {
 
 .certificate-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  border: 5px solid #61dafb;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .certificate-icon {

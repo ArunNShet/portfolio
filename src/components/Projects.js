@@ -27,7 +27,7 @@ const Projects = () => {
       description: 'Built with PHP, Bootstrap, and MySQL - includes inputting grades, generating reports...',
       details: 'Built with PHP, Bootstrap, and MySQL - includes inputting grades, generating reports, and tracking student performance. The system provides a user-friendly interface for administrators to manage student data, calculate grades, and generate comprehensive academic reports.',
       icon: '📊',
-      technologies: ['PHP', 'Bootstrap', 'MySQL'],
+      technologies: ['PHP', 'Bootstrap', 'Responsive', 'MySQL'],
       link: 'https://github.com/ArunNShet/Student-Result-Management-System'
     },
     {
@@ -35,7 +35,7 @@ const Projects = () => {
       description: 'This project performs data preprocessing, feature selection, and predictive analysis...',
       details: 'This project performs data preprocessing, feature selection, and predictive analysis for gold price forecasting. Using historical market data, the system employs Random Forest and XGBoost algorithms to predict future gold prices with high accuracy, helping investors make informed decisions.',
       icon: '💰',
-      technologies: ['Python', 'Pandas', 'XGBoost', 'RandomForest'],
+      technologies: ['Python', 'Pandas', 'Seaborn', 'XGBoost', 'RandomForest'],
       link: 'https://github.com/ArunNShet/Gold-Price-Prediction-using-machine-learning'
     }
   ];

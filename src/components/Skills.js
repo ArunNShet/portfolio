@@ -17,16 +17,16 @@ const Skills = () => {
       skills: [
         { name: 'HTML', icon: '/icons/html5.svg' },
         { name: 'CSS', icon: '/icons/css3.svg' },
-        { name: 'JavaScript', icon: '/icons/javascript.svg' },
-         { name: 'Bootstrap', icon: '/icons/bootstrap.png' }
+        { name: 'JavaScript', icon: '/icons/javascript.svg' }
       ]
     },
     {
       title: 'Frameworks',
       skills: [
+        { name: 'React', icon: '/icons/react.svg' },
+        { name: 'Bootstrap', icon: '/icons/bootstrap.png' },
         { name: 'Spring Boot', icon: '/icons/springboot.png' },
-        { name: 'Django', icon: '/icons/django.png' },
-        { name: 'React', icon: '/icons/react.svg' }
+        { name: 'Django', icon: '/icons/django.png' }
       ]
     },
     {
