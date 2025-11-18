@@ -28,7 +28,7 @@ const Header = () => {
             <a href="#certificates" className="nav-link" onClick={closeMenu}>Certificates</a>
             <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>
           </div>
-          <div className="hamburger" onClick={toggleMenu}>
+          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>

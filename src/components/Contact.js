@@ -42,7 +42,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-form">
-            {isSent && <p className="success-message">Message sent successfully!</p>}
+            {isSent && <p className="success-message">Message sent successfully, Thank You!</p>}
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
