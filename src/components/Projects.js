@@ -20,7 +20,7 @@ const Projects = () => {
       details: 'Developed a machine learning model to detect diseases in plant leaves using image processing and classification algorithms using CNNs. The system analyzes leaf images to identify various diseases, providing farmers with early detection capabilities to prevent crop loss.',
       icon: '🌿',
       technologies: ['Python', 'CNN', 'Image Processing', 'Flask'],
-      link: 'https://github.com/ArunNShet/Plant-leaf-disease-detection-using-ML'
+      link: 'https://github.com/ArunNShet/Plant-Leaf-Disease-Detection-Using-Machine-Learning'
     },
     {
       title: 'Student Result Management System',
