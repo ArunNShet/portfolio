@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import profileImage from '../assets/profile.jpg';
 import '../App.css';
 
 const Header = () => {
@@ -37,7 +38,7 @@ const Header = () => {
       </nav>
       <div className='container'>
       <div id="home" className="hero">
-        <img src="/profile.jpg" alt="Profile" className="profile-image" />
+        <img src={profileImage} alt="Profile" className="profile-image" />
         <div className="hero-text">
           <h1>Hi, I'm <div id="myname">ARUN N SHET</div></h1>
           <h2>

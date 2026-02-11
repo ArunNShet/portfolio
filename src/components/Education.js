@@ -31,25 +31,25 @@ const Education = () => {
     {
       degree: 'Master Of Computer Applications',
       institution: 'Jawaharlal Nehru New College of Engineering',
-      description: 'Completed Master\'s degree in 2024-25 with 80%.',
+      description: <>Completed Master's degree in 2024-25 with <strong>8.64 CGPA</strong>.</>,
       icon: '🎓'
     },
     {
       degree: 'Bachelor Of Computer Applications',
       institution: 'S R N M National College of Applied Sciences',
-      description: 'Completed degree in 2020-23 with 77.46%.',
+      description: <>Completed degree in 2020-23 with <strong>77.46%</strong>.</>,
       icon: '🎓'
     },
     {
       degree: 'PUC - PCMC',
       institution: 'H S Rudrappa National PU College',
-      description: 'Completed PUC in 2019-20 with 77.33%.',
+      description: <>Completed PUC in 2019-20 with <strong>77.33%</strong>.</>,
       icon: '🏫'
     },
     {
       degree: 'SSLC',
       institution: 'Gayatri English Medium High School',
-      description: 'Completed SSLC in 2017-18 with 79.04%.',
+      description: <>Completed SSLC in 2017-18 with <strong>79.04%</strong>.</>,
       icon: '🏫'
     }
   ];
