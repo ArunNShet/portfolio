@@ -15,6 +15,7 @@ import wordIcon from '../assets/icons/word.png';
 import excelIcon from '../assets/icons/excel.png';
 import powerpointIcon from '../assets/icons/powerpoint.png';
 import mysqlIcon from '../assets/icons/mysql.svg';
+import postgresqlIcon from '../assets/icons/postgresql.png';
 import mongodbIcon from '../assets/icons/mongodb.svg';
 import gitIcon from '../assets/icons/git.svg';
 import githubIcon from '../assets/icons/github.png';
@@ -59,7 +60,8 @@ const Skills = () => {
       title: 'Databases',
       skills: [
         { name: 'MySQL', icon: mysqlIcon },
-        { name: 'MongoDB', icon: mongodbIcon }
+        { name: 'MongoDB', icon: mongodbIcon },
+        { name: 'postgresql', icon: postgresqlIcon }
       ]
     },
     {

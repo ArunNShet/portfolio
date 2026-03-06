@@ -28,7 +28,7 @@ const Contact = () => {
             <div className="contact-item">
               <span className="contact-icon"><i className="fas fa-map-marker-alt bounce"></i></span>
               <span className="contact-label">Address:</span>
-              <span className="contact-value">Shimoga, Karnataka, India, 577201</span>
+              <span className="contact-value">Gandhi Bazar, Shivamoga, Karnataka, India, 577201</span>
             </div>
             <div className="contact-item">
               <span className="contact-icon"><i className="fas fa-phone bounce"></i></span>

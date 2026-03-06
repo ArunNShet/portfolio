@@ -31,7 +31,7 @@ const Education = () => {
     {
       degree: 'Master Of Computer Applications',
       institution: 'Jawaharlal Nehru New College of Engineering',
-      description: <>Completed Master's degree in 2024-25 with <strong>8.64 CGPA</strong>.</>,
+      description: <>Completed Master's degree in 2024-25 with <strong>8.63 CGPA</strong>.</>,
       icon: '🎓'
     },
     {
