@@ -3,19 +3,71 @@ import '../App.css';
 
 const Contact = () => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [isSent, setIsSent] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [error, setError] = useState('');
+  const [statusMessage, setStatusMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const getFriendlyErrorMessage = (messageText) => {
+    if (!messageText) {
+      return 'Something went wrong while sending your message. Please try again in a moment or contact me directly at arunnshet2002@gmail.com.';
+    }
+
+    if (messageText.toLowerCase().includes('activation')) {
+      return 'The contact form is not activated yet. Please check the Gmail inbox for arunnshet2002@gmail.com and open the latest FormSubmit activation email.';
+    }
+
+    return 'Your message could not be sent right now. Please try again in a moment or contact me directly at arunnshet2002@gmail.com.';
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (name && subject && message) {
-      // Simulate sending message
-      setIsSent(true);
-      // Reset form
-      setName('');
-      setSubject('');
-      setMessage('');
+    setError('');
+    setIsSent(false);
+    setStatusMessage('');
+
+    if (name && email && subject && message) {
+      setIsSending(true);
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/arunnshet2002@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            subject,
+            message
+          })
+        });
+
+        const result = await response.json();
+        const requestSucceeded =
+          response.ok && (result.success === true || result.success === 'true');
+
+        if (!requestSucceeded) {
+          throw new Error(result.message || 'Message sending failed');
+        }
+
+        setIsSent(true);
+        setStatusMessage(
+          'Thank you for your message. I have received it and will get back to you soon.'
+        );
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } catch (submitError) {
+        setError(getFriendlyErrorMessage(submitError.message));
+      } finally {
+        setIsSending(false);
+      }
     }
   };
 
@@ -42,7 +94,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-form">
-            {isSent && <p className="success-message">Message sent successfully, Thank You!</p>}
+            {isSent && <p className="success-message">{statusMessage}</p>}
+            {error && <p className="success-message">{error}</p>}
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -52,6 +105,17 @@ const Contact = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
                   required
                 />
               </div>
@@ -76,7 +140,9 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="send-btn">Send Message</button>
+              <button type="submit" className="send-btn" disabled={isSending}>
+                {isSending ? 'Sending...' : 'Send Message'}
+              </button>
             </form>
           </div>
         </div>

@@ -6,6 +6,13 @@ const Certificate = () => {
 
   const certificates = [
     {
+      title: 'PROGRAMMING USING JAVA',
+      issuer: 'INFOSYS SPRINGBOARD',
+      date: '2026',
+      description: 'This certification covers core Java programming concepts including object-oriented programming, classes and objects, exception handling, collections, and writing structured, reusable applications.',
+      image: certificateLogo,
+      link: 'https://drive.google.com/file/d/1j-QfVpcHD112w_k6YHmAvZbQlTwHNopy/view?usp=drive_link'
+    },{
       title: 'DATA ANALYSIS WITH PYTHON',
       issuer: 'IBM SKILLSBUILD',
       date: '2025',
